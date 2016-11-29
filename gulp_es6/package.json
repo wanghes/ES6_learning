@@ -1,0 +1,21 @@
+{
+  "name": "gulp_es6",
+  "version": "1.0.0",
+  "description": "none",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp bundle"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "wanghes",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-plugin-external-helpers": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "gulp": "^3.9.1",
+    "gulp-rollup": "^2.5.1",
+    "rollup-plugin-babel": "^2.6.1"
+  }
+}
