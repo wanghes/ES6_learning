@@ -163,11 +163,16 @@ console.log(iterators) // iterator [0, "a"], [1,"b"], [2,"c"]
 //
 var promise = new Promise(function(resolve, reject) {
     // 进行一些异步或耗时操作
-    if ( /*如果成功 */ ) {
-        resolve("Stuff worked!");
-    } else {
-        reject(Error("It broke"));
-    }
+    let bool = false;
+    setTimeout(()=>{
+        bool = true;
+        if ( bool ) {
+            resolve("Stuff worked!");
+        } else {
+            reject(Error("It broke"));
+        }
+    }, 2000);
+
 });
 //绑定处理程序
 promise.then(function(result) {
